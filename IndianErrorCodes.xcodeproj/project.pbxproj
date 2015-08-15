@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFEE32421B658C60001EBAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEE32411B658C60001EBAEC /* AppDelegate.swift */; };
+		CFEE32441B658C60001EBAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEE32431B658C60001EBAEC /* ViewController.swift */; };
+		CFEE32471B658C60001EBAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEE32451B658C60001EBAEC /* Main.storyboard */; };
+		CFEE32491B658C60001EBAEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEE32481B658C60001EBAEC /* Images.xcassets */; };
+		CFEE324C1B658C60001EBAEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFEE324A1B658C60001EBAEC /* LaunchScreen.xib */; };
+		CFEE32581B658C61001EBAEC /* IndianErrorCodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEE32571B658C61001EBAEC /* IndianErrorCodesTests.swift */; };
+		CFEE32621B658CBB001EBAEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEE32611B658CBB001EBAEC /* libsqlite3.dylib */; };
+		CFEE32751B658D77001EBAEC /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEE326C1B658D48001EBAEC /* SQLite.framework */; };
+		CFEE32771B658DD1001EBAEC /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFEE326C1B658D48001EBAEC /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEE32811B65B515001EBAEC /* ErrorCodes.db in Resources */ = {isa = PBXBuildFile; fileRef = CFEE32801B65B515001EBAEC /* ErrorCodes.db */; };
+		CFEE32831B6607DE001EBAEC /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEE32821B6607DE001EBAEC /* SQLiteDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFEE32521B658C61001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32341B658C60001EBAEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEE323B1B658C60001EBAEC;
+			remoteInfo = IndianErrorCodes;
+		};
+		CFEE326B1B658D48001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
+			remoteInfo = SQLite;
+		};
+		CFEE326D1B658D48001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773FE19C8CBB3004FCF85;
+			remoteInfo = "SQLite Tests";
+		};
+		CFEE326F1B658D48001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCC6B3801A9191C300734B78;
+			remoteInfo = SQLiteCipher;
+		};
+		CFEE32711B658D48001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCC6B3921A9191D100734B78;
+			remoteInfo = "SQLiteCipher Tests";
+		};
+		CFEE32731B658D5B001EBAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
+			remoteInfo = SQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFEE32761B658DBC001EBAEC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFEE32771B658DD1001EBAEC /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CFEE323C1B658C60001EBAEC /* IndianErrorCodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndianErrorCodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE32401B658C60001EBAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEE32411B658C60001EBAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFEE32431B658C60001EBAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFEE32461B658C60001EBAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFEE32481B658C60001EBAEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFEE324B1B658C60001EBAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CFEE32511B658C61001EBAEC /* IndianErrorCodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndianErrorCodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE32561B658C61001EBAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEE32571B658C61001EBAEC /* IndianErrorCodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianErrorCodesTests.swift; sourceTree = "<group>"; };
+		CFEE32611B658CBB001EBAEC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
+		CFEE32801B65B515001EBAEC /* ErrorCodes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ErrorCodes.db; sourceTree = "<group>"; };
+		CFEE32821B6607DE001EBAEC /* SQLiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFEE32391B658C60001EBAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEE32751B658D77001EBAEC /* SQLite.framework in Frameworks */,
+				CFEE32621B658CBB001EBAEC /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE324E1B658C61001EBAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFEE32331B658C60001EBAEC = {
+			isa = PBXGroup;
+			children = (
+				CFEE32611B658CBB001EBAEC /* libsqlite3.dylib */,
+				CFEE323E1B658C60001EBAEC /* IndianErrorCodes */,
+				CFEE32541B658C61001EBAEC /* IndianErrorCodesTests */,
+				CFEE323D1B658C60001EBAEC /* Products */,
+				CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEE323D1B658C60001EBAEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE323C1B658C60001EBAEC /* IndianErrorCodes.app */,
+				CFEE32511B658C61001EBAEC /* IndianErrorCodesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFEE323E1B658C60001EBAEC /* IndianErrorCodes */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE32411B658C60001EBAEC /* AppDelegate.swift */,
+				CFEE32821B6607DE001EBAEC /* SQLiteDatabase.swift */,
+				CFEE32431B658C60001EBAEC /* ViewController.swift */,
+				CFEE32451B658C60001EBAEC /* Main.storyboard */,
+				CFEE32481B658C60001EBAEC /* Images.xcassets */,
+				CFEE32801B65B515001EBAEC /* ErrorCodes.db */,
+				CFEE324A1B658C60001EBAEC /* LaunchScreen.xib */,
+				CFEE323F1B658C60001EBAEC /* Supporting Files */,
+			);
+			path = IndianErrorCodes;
+			sourceTree = "<group>";
+		};
+		CFEE323F1B658C60001EBAEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE32401B658C60001EBAEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFEE32541B658C61001EBAEC /* IndianErrorCodesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE32571B658C61001EBAEC /* IndianErrorCodesTests.swift */,
+				CFEE32551B658C61001EBAEC /* Supporting Files */,
+			);
+			path = IndianErrorCodesTests;
+			sourceTree = "<group>";
+		};
+		CFEE32551B658C61001EBAEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE32561B658C61001EBAEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFEE32641B658D48001EBAEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE326C1B658D48001EBAEC /* SQLite.framework */,
+				CFEE326E1B658D48001EBAEC /* SQLite Tests.xctest */,
+				CFEE32701B658D48001EBAEC /* SQLite.framework */,
+				CFEE32721B658D48001EBAEC /* SQLiteCipher Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFEE323B1B658C60001EBAEC /* IndianErrorCodes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEE325B1B658C61001EBAEC /* Build configuration list for PBXNativeTarget "IndianErrorCodes" */;
+			buildPhases = (
+				CFEE32381B658C60001EBAEC /* Sources */,
+				CFEE32391B658C60001EBAEC /* Frameworks */,
+				CFEE323A1B658C60001EBAEC /* Resources */,
+				CFEE32761B658DBC001EBAEC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEE32741B658D5B001EBAEC /* PBXTargetDependency */,
+			);
+			name = IndianErrorCodes;
+			productName = IndianErrorCodes;
+			productReference = CFEE323C1B658C60001EBAEC /* IndianErrorCodes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFEE32501B658C61001EBAEC /* IndianErrorCodesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEE325E1B658C61001EBAEC /* Build configuration list for PBXNativeTarget "IndianErrorCodesTests" */;
+			buildPhases = (
+				CFEE324D1B658C61001EBAEC /* Sources */,
+				CFEE324E1B658C61001EBAEC /* Frameworks */,
+				CFEE324F1B658C61001EBAEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEE32531B658C61001EBAEC /* PBXTargetDependency */,
+			);
+			name = IndianErrorCodesTests;
+			productName = IndianErrorCodesTests;
+			productReference = CFEE32511B658C61001EBAEC /* IndianErrorCodesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFEE32341B658C60001EBAEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Maxwell Burggraf";
+				TargetAttributes = {
+					CFEE323B1B658C60001EBAEC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CFEE32501B658C61001EBAEC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CFEE323B1B658C60001EBAEC;
+					};
+				};
+			};
+			buildConfigurationList = CFEE32371B658C60001EBAEC /* Build configuration list for PBXProject "IndianErrorCodes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFEE32331B658C60001EBAEC;
+			productRefGroup = CFEE323D1B658C60001EBAEC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CFEE32641B658D48001EBAEC /* Products */;
+					ProjectRef = CFEE32631B658D48001EBAEC /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CFEE323B1B658C60001EBAEC /* IndianErrorCodes */,
+				CFEE32501B658C61001EBAEC /* IndianErrorCodesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CFEE326C1B658D48001EBAEC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CFEE326B1B658D48001EBAEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFEE326E1B658D48001EBAEC /* SQLite Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Tests.xctest";
+			remoteRef = CFEE326D1B658D48001EBAEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFEE32701B658D48001EBAEC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CFEE326F1B658D48001EBAEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFEE32721B658D48001EBAEC /* SQLiteCipher Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher Tests.xctest";
+			remoteRef = CFEE32711B658D48001EBAEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFEE323A1B658C60001EBAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEE32471B658C60001EBAEC /* Main.storyboard in Resources */,
+				CFEE324C1B658C60001EBAEC /* LaunchScreen.xib in Resources */,
+				CFEE32811B65B515001EBAEC /* ErrorCodes.db in Resources */,
+				CFEE32491B658C60001EBAEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE324F1B658C61001EBAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFEE32381B658C60001EBAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEE32441B658C60001EBAEC /* ViewController.swift in Sources */,
+				CFEE32421B658C60001EBAEC /* AppDelegate.swift in Sources */,
+				CFEE32831B6607DE001EBAEC /* SQLiteDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE324D1B658C61001EBAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEE32581B658C61001EBAEC /* IndianErrorCodesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFEE32531B658C61001EBAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFEE323B1B658C60001EBAEC /* IndianErrorCodes */;
+			targetProxy = CFEE32521B658C61001EBAEC /* PBXContainerItemProxy */;
+		};
+		CFEE32741B658D5B001EBAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite;
+			targetProxy = CFEE32731B658D5B001EBAEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFEE32451B658C60001EBAEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFEE32461B658C60001EBAEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFEE324A1B658C60001EBAEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFEE324B1B658C60001EBAEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFEE32591B658C61001EBAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFEE325A1B658C61001EBAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFEE325C1B658C61001EBAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IndianErrorCodes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFEE325D1B658C61001EBAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IndianErrorCodes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFEE325F1B658C61001EBAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IndianErrorCodesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndianErrorCodes.app/IndianErrorCodes";
+			};
+			name = Debug;
+		};
+		CFEE32601B658C61001EBAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IndianErrorCodesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndianErrorCodes.app/IndianErrorCodes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFEE32371B658C60001EBAEC /* Build configuration list for PBXProject "IndianErrorCodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE32591B658C61001EBAEC /* Debug */,
+				CFEE325A1B658C61001EBAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEE325B1B658C61001EBAEC /* Build configuration list for PBXNativeTarget "IndianErrorCodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE325C1B658C61001EBAEC /* Debug */,
+				CFEE325D1B658C61001EBAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEE325E1B658C61001EBAEC /* Build configuration list for PBXNativeTarget "IndianErrorCodesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE325F1B658C61001EBAEC /* Debug */,
+				CFEE32601B658C61001EBAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFEE32341B658C60001EBAEC /* Project object */;
+}

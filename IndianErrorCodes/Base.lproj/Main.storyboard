@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IndianErrorCodes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SPN" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vv1-5H-khu">
+                                <rect key="frame" x="252" y="72" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="outputTextViewEdited:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Sua-ii-YZG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bdl-jT-FeP"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cat-vp-DVw">
+                                <rect key="frame" x="134" y="162" width="332" height="94"/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="test" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-d3-Q0X">
+                                <rect key="frame" x="134" y="390" width="332" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Vv1-5H-khu" secondAttribute="centerX" constant="-0.5" id="Anp-lx-39j"/>
+                            <constraint firstAttribute="centerX" secondItem="Cat-vp-DVw" secondAttribute="centerX" id="jg3-QV-zka"/>
+                            <constraint firstAttribute="centerX" secondItem="ce9-d3-Q0X" secondAttribute="centerX" constant="-11" id="sL6-69-I99"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FMIPicker" destination="Cat-vp-DVw" id="JKe-g3-gO2"/>
+                        <outlet property="SPNField" destination="Vv1-5H-khu" id="ze0-u7-5Eb"/>
+                        <outlet property="outputTextView" destination="ce9-d3-Q0X" id="R8F-Fd-lvF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="114"/>
+        </scene>
+    </scenes>
+</document>
